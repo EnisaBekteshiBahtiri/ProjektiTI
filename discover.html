@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Holidays Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .sub-header-discover {
+      height: 50vh;
+      width: 100%;
+      background-image: linear-gradient(rgba(4, 9, 40, 0.7), rgba(4, 9, 40, 0.7)),
+        url(images/g-8.jpg);
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+      position: relative;
+      color: #fff;
+    }
+
+    .blog-left {
+      flex-basis: 65%;
+    }
+
+    .blog-left img {
+      width: 100%;
+      border-radius: 20%;
+    }
+
+    .blog-right {
+      flex-basis: 32%;
+    }
+
+    .blog-right h3 {
+      background: #f44336;
+      color: #fff;
+      padding: 7px 0;
+      font-size: 16px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .blog-right div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #555;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .comment-box {
+      border: 1px solid #ccc;
+      margin: 50px 0;
+      padding: 10px 20px;
+      width: 100%;
+    }
+
+    .comment-box h3 {
+      text-align: left;
+    }
+
+    .comment-form input,
+    .comment-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 15px 0;
+      box-sizing: border-box;
+      border: none;
+      outline: none;
+      background: #f0f0f0;
+    }
+
+    .comment-form button {
+      margin: 10px 0;
+      background-color: #fff;
+      border: 1px solid #f44336;
+      color: #f44336;
+    }
+
+    .comment-form button:hover {
+      color: white;
+    }
+
+    /*---------- blog-card section-------*/
+
+    .blog-card {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem auto;
+      box-shadow: 0 3px 7px -1px rgba(#000, 0.1);
+      margin-bottom: 1.6%;
+      background: #fff;
+      line-height: 1.4;
+      border-radius: 5px;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .blog-card:hover .photo {
+      transform: scale(1.3) rotate(3deg);
+    }
+
+    .meta {
+      position: relative;
+      z-index: 0;
+      height: 200px;
+    }
+
+    .photo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.2s;
+    }
+
+    .description {
+      padding: 1rem;
+      background: #fff;
+      position: relative;
+      z-index: 1;
+    }
+
+    .description h1 {
+      line-height: 1;
+      margin: 0;
+      font-size: 1.7rem;
+    }
+
+    .description p {
+      position: relative;
+      margin: 1rem 0 0;
+    }
+
+    @media (min-width: 640px) {
+      .blog-card {
+        flex-direction: row;
+      }
+
+      .meta {
+        flex-basis: 40%;
+        height: auto;
+      }
+
+      .description {
+        flex-basis: 60%;
+      }
+
+      .description::before {
+        transform: skewX(-3deg);
+        content: '';
+        background: #fff;
+        width: 30px;
+        position: absolute;
+        left: -10px;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+
+      .alt {
+        flex-direction: row-reverse;
+      }
+
+      .alt .description::before {
+        left: inherit;
+        right: -10px;
+        transform: skew(3deg);
+      }
+    }
+
+    /*------ airplane section------ */
+    .airplane img {
+      width: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="sub-header-discover">
+    <nav>
+      <a href="index.html"><img src="images/book-img.svg" class="nav-img" /></a>
+      <div class="nav-links" id="nav-links">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="aboutus1.html">ABOUT</a></li>
+          <li><a href="discover.html">DISCOVER</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1>Discover</h1>
+  </section>
+
+  <section class="section blog-content">
+    <h1 class="section-title">Discover the most attractive places</h1>
+    <div class="row">
+      <div class="blog-left">
+        <img name="slide" />
+      </div>
+
+      <div class="blog-right">
+        <h3>Hotels</h3>
+        <div>
+          <span>Grand Palladium <br />Palace Ibiza</span>
+          <span>All inclusive</span>
+        </div>
+        <div>
+          <span>Caleta Dorada</span>
+          <span>All inclusive</span>
+        </div>
+        <div>
+          <span>Chrysomera Beach<br />
+            Hotel and Resort</span>
+          <span>All inclusive</span>
+        </div>
+        <div>
+          <span>Jasmine Palace Resort</span>
+          <span>All inclusive</span>
+        </div>
+        <div>
+          <span>Elden Resort</span>
+          <span>All inclusive</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section visited-places">
+    <h1 class="section-title">The most visited places</h1>
+    <div class="blog-card">
+      <div class="meta">
+        <div class="photo" style="
+              background-image: url(images/discover_img/balearicIslands.jpg);
+            "></div>
+      </div>
+      <div class="description">
+        <h1>Balearic Islands</h1>
+        <p>
+          The <strong>Balearic Islands</strong> are an archipelago of islands
+          in Spain in the western Mediterranean Sea, near the eastern coast of
+          the Iberian Peninsula. The four largest islands are Mallorca,
+          Menorca, Ibiza, and Formentera. Many minor islands and islets are
+          close to the larger islands, including Cabrera, Dragonera, and
+          S'Espalmador.
+        </p>
+      </div>
+    </div>
+    <div class="blog-card alt">
+      <div class="meta">
+        <div class="photo" style="background-image: url(images/discover_img/canary.jpg)"></div>
+      </div>
+      <div class="description">
+        <h1>Canary Islands</h1>
+        <p>
+          The <strong>Canary Islands</strong>; Spanish: Islas Canarias, also
+          known informally as the Canaries, is a Spanish archipelago in the
+          Atlantic Ocean, in a region known as Macaronesia. At their closest
+          point to the African mainland, they are 100 kilometres (62 miles)
+          west of Morocco. They are the southernmost of the autonomous
+          communities of Spain, and are located in the African Tectonic Plate.
+          The archipelago is economically and politically European, and is
+          part of the European Union. The eight main islands are (from largest
+          to smallest in area) Tenerife, Fuerteventura, Gran Canaria,
+          Lanzarote, La Palma, La Gomera, El Hierro and La Graciosa.
+        </p>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <div class="meta">
+        <div class="photo" style="background-image: url(images/discover_img/cyprus.jpg)"></div>
+      </div>
+      <div class="description">
+        <h1>Cyprus</h1>
+        <p>
+          <strong>Cyprus</strong>, officially called the Republic of Cyprus,
+          is an island nation in the eastern Mediterranean Sea. It is the
+          third largest and third most populous island in the Mediterranean,
+          and is located south of Turkey; west of Syria; northwest of Lebanon,
+          Israel and the Gaza Strip; north of Egypt; and southeast of Greece.
+          Nicosia is the country's capital and largest city.
+        </p>
+      </div>
+    </div>
+    <div class="blog-card alt">
+      <div class="meta">
+        <div class="photo" style="background-image: url(images/discover_img/turkey.jpg)"></div>
+      </div>
+      <div class="description">
+        <h1>Turkey</h1>
+        <p>
+          <strong>Turkey</strong> is one of the world's top ten destination
+          countries, with the highest percentage of foreign visitors arriving
+          from Europe; specially Germany and Russia in recent years. In 2019,
+          Turkey ranked sixth in the world in terms of the number of
+          international tourist arrivals, with 51.2 million foreign tourists
+          visiting the country. Turkey has 17 UNESCO World Heritage Sites, and
+          51 World Heritage Sites in tentative list.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section airplane">
+    <h1 class="section-title">Book Your Flight Now</h1>
+    <div class="row">
+      <div class="airplane-left">
+        <img src="images/discover_img/airplane.svg" alt="airplane">
+      </div>
+
+      <div class="airplane-right">
+        <div class="comment-box">
+          <h3>Where To</h3>
+          <form class="comment-form">
+            <input type="text" placeholder="enter name" />
+            <h3>How many</h3>
+            <input type="number" placeholder="number of guests" />
+            <h3>Arrivals</h3>
+            <input type="date" />
+            <h3>Leaving</h3>
+            <input type="date" />
+            <textarea rows="5" placeholder="Your comment"></textarea>
+            <button type="submit" class="button1">POST COMMENT</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <h3>Holidays Website</h3>
+    <p>
+      It all started with a simple idea. <br />Since my moom loved traveling
+      she started telling us some of her favourite places for vacation and how
+      she wished there was a website for her to choose where to go to.
+    </p>
+    <div class="icons">
+      <img src="images/instagram.svg" alt="instagram icon" />
+      <img src="images/facebook.svg" alt="facebook icon" />
+      <img src="images/twitter.svg" alt="twitter icon" />
+      <img src="images/linkedin.svg" alt="linkedin icon" />
+    </div>
+    <p>All Rights Reserved &copy; 2022 Per programera</p>
+  </section>
+
+  <script src="discover.js"></script>
+</body>
+
+</html>

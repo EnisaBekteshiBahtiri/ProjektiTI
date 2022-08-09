@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Holidays Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <style>
+    /*--------ABOUT US--------*/
+    .sub-header2 {
+      height: 50vh;
+      width: 100%;
+      background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(images/p-2.jpg);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      text-align: center;
+      color: #fff;
+    }
+
+    .page {
+      height: 1000px;
+      border: 1px solid black;
+      padding: 15px;
+    }
+
+    #content {
+      box-sizing: border-box;
+      float: left;
+      width: 73%;
+      height: 950px;
+      border: 1px solid #111;
+      padding: 10px;
+    }
+
+    #content h3,
+    #leaders>h4 {
+      color: #f9f8f6;
+      text-align: left;
+      background-color: lightblue;
+      padding: 8px 5px;
+      width: 70%;
+    }
+
+    #content p {
+      padding-left: 2px;
+    }
+
+    #leaders {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .members {
+      float: left;
+      width: 33%;
+      margin: 0.08em;
+    }
+
+    .members img {
+      width: 80%;
+      border: 1px solid #aaaaaa;
+      margin-top: 5px;
+    }
+
+    .members h4 {
+      color: #333;
+      border-bottom: 2px solid lightblue;
+      padding-bottom: 5px;
+      width: 90%;
+      margin: 20px auto;
+    }
+
+    .members p {
+      text-align: justify;
+      width: 95%;
+      margin: 10px auto;
+    }
+
+    .members>a {
+      float: right;
+      margin-right: 10px;
+      color: lightblue;
+    }
+
+    .members>a:hover {
+      text-decoration: overline;
+    }
+
+    #members {
+      float: left;
+      margin-top: 20px;
+      margin-left: 2px;
+      width: 90%;
+      empty-cells: show;
+      border-spacing: 2px 4px;
+      border-collapse: separate;
+    }
+
+    #members td,
+    #members th {
+      font-size: 1em;
+      border: 1px solid lightblue;
+      padding: 5px 9px 4px;
+    }
+
+    #members th {
+      font-size: 1.1em;
+      text-align: left;
+      padding-top: 5px;
+      padding-bottom: 4px;
+      background-color: lightblue;
+      color: #ffffff;
+    }
+
+    #members tr.alt td {
+      color: #fff;
+      background-color: #888;
+    }
+
+    /**======= End of Page Content=======*/
+
+    /**======= Page Sidebar=======*/
+    #sidebar {
+      float: right;
+      width: 26%;
+      border: 1px solid #111;
+      height: 950px;
+    }
+
+    #login {
+      float: left;
+      margin: 15px 10px;
+      width: 95%;
+    }
+
+    #login input[type='email'],
+    #login input[type='password'],
+    #login input[type='submit'] {
+      height: 35px;
+      width: 100%;
+      border-radius: 10px;
+      padding-left: 5px;
+      border: 1px solid gray;
+    }
+
+    #login label {
+      height: 35px;
+      width: 100%;
+      text-align: left;
+      margin: 0;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    #login input[type='submit'] {
+      width: 50%;
+      margin-top: 20px;
+      color: #f9f8f6;
+      background-color: lightblue;
+    }
+
+    #login legend {
+      color: #f9f8f6;
+      text-align: left;
+      background-color: lightblue;
+      padding: 8px 5px;
+      width: 90%;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    #sidebar h3 {
+      margin-left: 7px;
+      width: 90%;
+    }
+
+    #sidebar ol li {
+      margin-left: 25px;
+    }
+
+    #sidebar ul li {
+      margin-left: 25px;
+    }
+
+    .footer {
+      width: 100%;
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    #myBtn {
+      display: inline;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      border: solid;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    #myBtn:hover {
+      background-color: lightblue;
+    }
+
+    /**======= End of Page Sidebar=======*/
+  </style>
+</head>
+
+<body>
+  <section class="sub-header2">
+    <nav>
+      <a href="index.html"><img src="images/book-img.svg" class="nav-img" /></a>
+      <div class="nav-links" id="nav-links">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="aboutus1.html">ABOUT</a></li>
+          <li><a href="discover.html">DISCOVER</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1>About Us</h1>
+  </section>
+
+  <main class="container page">
+    <section id="content">
+      <h3>OUR AGENCY</h3>
+      <p>
+        We are the customer's desire, what our client wants to offer from us,
+        we offer.
+        <br /><br />
+        From Europe to Asia you can travel with us with the best prices in the
+        country and the most beautiful offers
+      </p>
+      <hr />
+
+      <section id="leaders">
+        <h4>AGENCY LEADERS</h4>
+        <article class="members">
+          <img src="images/jasmine.jpg" alt="Bulza Rexhepi" />
+          <h4>Filan Fisteku</h4>
+          <p>Ambitious girl, loves teamwork and helps her friends a lot. The representative of our generation.</p>
+          <a href="cv.html">more --&gt;&gt;</a>
+        </article>
+        <article class="members">
+          <img src="images/jade.jpg" alt="Enisa Bekteshi" />
+          <h4>Enisa Bekteshi</h4>
+          <p>Beloved with her friends, she is a hardworking girl. Very thoughtful and lovely</p>
+          <a href="cv1.html">more --&gt;&gt;</a>
+        </article>
+        <article class="members">
+          <img src="images/cloe.jpg" alt="Jora Kursani" />
+          <h4>Syle Sylani</h4>
+          <p>
+            She is J in BEJ, full of energy and positivity girl, she is a
+            dancer. Very creative and eficient.
+          </p>
+          <a href="cv2.html">more --&gt;&gt;</a>
+        </article>
+      </section>
+      <table id="members">
+        <tr>
+          <th>A personal name agency</th>
+          <th>Secret telephone</th>
+          <th>Secret Email</th>
+        </tr>
+        <tr>
+          <td>BEJ</td>
+          <td>044/000000</td>
+          <td>bej@riinvest.net</td>
+        </tr>
+      </table>
+    </section>
+    <aside id="sidebar">
+      <form id="login" action="" method="">
+        <legend>IF YOU LIKE TO BE OUR TEAM</legend>
+        <label>The first letter of your name by@mail.com</label>
+        <input type="email" name="email" id="email" /><br />
+        <label>Our secret password if you know:</label>
+        <input type="password" name="password" id="password" /><br />
+        <input type="submit" value="Apply if u can" />
+      </form>
+      <h3 style="margin-top: 15px">
+        You can be part of our agency if you possess these conditions:
+      </h3>
+      <ol>
+        <li>Genius</li>
+        <li>IT</li>
+        <li>Cyber Security</li>
+        <li>Beautiful face</li>
+        <li>Beaufitul thoughts</li>
+      </ol>
+      <h3 style="margin-top: 15px">BEJ</h3>
+      <ul>
+        <li>BE STRONG</li>
+        <li>BE HOLIDAY</li>
+        <li>BE BEAUTIFUL</li>
+        <li>BE SPECIAL</li>
+        <li>BE DEAR</li>
+        <li>BE GENIUS</li>
+        <li>BE <a href="www.riinvest.net">BEJ</a></li>
+      </ul>
+      <p id="permbajteja" style="margin-top: 10px">
+        With us you can create beautiful memories
+      </p>
+      <button id="ndryshopermbajtje" style="margin-left: 15px">
+        Without us!!
+      </button>
+      <script src="script.js"></script>
+    </aside>
+  </main>
+
+  <section class="footer">
+    <h3>Holidays Website</h3>
+    <p>
+      It all started with a simple idea. <br />Since my moom loved traveling
+      she started telling us some of her favourite places for vacation and how
+      she wished there was a website for her to choose where to go to.
+    </p>
+    <div class="icons">
+      <img src="images/instagram.svg" alt="instagram icon" />
+      <img src="images/facebook.svg" alt="facebook icon" />
+      <img src="images/twitter.svg" alt="twitter icon" />
+      <img src="images/linkedin.svg" alt="linkedin icon" />
+    </div>
+    <p>All Rights Reserved &copy; 2022 Per programera</p>
+  </section>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/top.svg" width="30"
+      height="30"></button>
+
+
+</body>
+
+</html>
